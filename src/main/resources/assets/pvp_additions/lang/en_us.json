@@ -1,0 +1,18 @@
+{
+  "gamerule.enableDeathGamerule": "Enable Bows",
+  "gamerule.enableBows": "Enable Crits",
+  "gamerule.sendWelcomeTipsGamerule": "Send Welcome Tips",
+  "gamerule.enablePearls.description": "Enable the Player to use Ender Pearls",
+  "gamerule.enableShield": "Enable Shield",
+  "gamerule.enablePearls": "Enable Ender Pearls",
+  "gamerule.enableBows.description": "Enable the Player to do critical hits",
+  "gamerule.enableDeathGamerule.description": "Enable Player using bows",
+  "gamerule.sendWelcomeTipsGamerule.description": "Send Welcome Tips when a OP joins the game",
+  "gamerule.enablePvPGamerule": "Enable PvP",
+  "gamerule.enableTotemsGamerule.description": "Enable Players using Totems",
+  "gamerule.enableHealingGamerule": "Enable Healing",
+  "gamerule.enablePvPGamerule.description": "Enable Player PvP",
+  "gamerule.enableHealingGamerule.description": "Enable Player healing",
+  "gamerule.enableShield.description": "Make Players able to use the shield",
+  "gamerule.enableTotemsGamerule": "Enable Totems"
+}

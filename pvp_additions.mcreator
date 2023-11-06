@@ -1,0 +1,614 @@
+{
+  "mod_elements": [
+    {
+      "name": "EnableShield",
+      "type": "gamerule",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_shield_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "NoShield",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_shield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoShieldSet",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_shield_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoShieldSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnableShieldCommand",
+      "type": "command",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_shield_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/EnableShieldCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "EnableHealingGamerule",
+      "type": "gamerule",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_healing_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "NoHealing",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoHealingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoHealingSet",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_healing_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoHealingSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnableHealingCommand",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_healing_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/EnableHealingCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NoPvP",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_pv_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoPvPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnablePvPGamerule",
+      "type": "gamerule",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_pv_p_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "EnablePvP",
+      "type": "command",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_pv_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/EnablePvPCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NoPvPSet",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_pv_p_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoPvPSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoTotems",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_totems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoTotemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnableTotemsGamerule",
+      "type": "gamerule",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_totems_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "EnableTotems",
+      "type": "command",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_totems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/EnableTotemsCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NoTotemsSet",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_totems_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoTotemsSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SendWelcomeTips",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_welcome_tips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/SendWelcomeTipsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnableBows",
+      "type": "gamerule",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_bows",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "NoBowsCommand",
+      "type": "command",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_bows_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/NoBowsCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NoBowsSet",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_bows_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoBowsSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoBows",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_bows",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/NoBowsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SendWelcomeTipsGamerule",
+      "type": "gamerule",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_welcome_tips_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "SendWelcomeTipsCommand",
+      "type": "command",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_welcome_tips_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/command/SendWelcomeTipsCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "EnableWelcomeTips",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enable_welcome_tips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pvpadditions/procedures/EnableWelcomeTipsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gamerule.enableDeathGamerule": "Enable Bows",
+      "gamerule.enableBows": "Enable Crits",
+      "gamerule.sendWelcomeTipsGamerule": "Send Welcome Tips",
+      "gamerule.enablePearls.description": "Enable the Player to use Ender Pearls",
+      "gamerule.enableShield": "Enable Shield",
+      "gamerule.enablePearls": "Enable Ender Pearls",
+      "gamerule.enableBows.description": "Enable the Player to do critical hits",
+      "gamerule.enableDeathGamerule.description": "Enable Player using bows",
+      "gamerule.sendWelcomeTipsGamerule.description": "Send Welcome Tips when a OP joins the game",
+      "gamerule.enablePvPGamerule": "Enable PvP",
+      "gamerule.enableTotemsGamerule.description": "Enable Players using Totems",
+      "gamerule.enableHealingGamerule": "Enable Healing",
+      "gamerule.enablePvPGamerule.description": "Enable Player PvP",
+      "gamerule.enableHealingGamerule.description": "Enable Player healing",
+      "gamerule.enableShield.description": "Make Players able to use the shield",
+      "gamerule.enableTotemsGamerule": "Enable Totems"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "pvp_additions",
+    "modName": "PvP Additions",
+    "version": "1.0.0",
+    "description": "PvP Additons. Check Modrinth/CurseForge/Discord for wiki.",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/zPxVc6x2Y6",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": true,
+    "updateURL": "https://discord.gg/zPxVc6x2Y6",
+    "modPicture": "pvp_additions",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.1",
+    "credits": "https://discord.gg/zPxVc6x2Y6",
+    "modElementsPackage": "net.mcreator.pvpadditions",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
